@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="projects.html">Projects</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Nico Gonnella</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>Hobbies & Interests</h1>
+
+        <h1 class = "text-center bg-light">Hobbies & Interests</h1>
     </header>
     <main>
-        <h2>My Favorite Travel Destinations</h2>
+        <h2 class = "badge bg-secondary">My Favorite Travel Destinations</h2>
         <ol>
             <li>Italy</li>
             <img src="https://images.musement.com/cover/0001/56/capri-jpg_header-55003.jpeg" alt="The Island of Capri" width="20%" height="20%">
@@ -29,5 +41,6 @@
         <blockquote><em>"Live, Laugh, Love"</em></blockquote>
         <img src="https://i.etsystatic.com/18516376/r/il/90d872/3137850395/il_1588xN.3137850395_h7n5.jpg" alt="My room decor!" width="20%" height="20%">
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
