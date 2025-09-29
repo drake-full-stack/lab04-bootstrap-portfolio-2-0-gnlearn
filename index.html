@@ -4,39 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico Gonnella - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Nico Gonnella</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <h1>Nico Gonnella</h1>
-    </header>
-    <main>
-
-        <h2>About Me</h2>
-        <p>This year I am a Senior. My computer science goal is to work on transitioning from writing code like a student to writing code like a software engineer in preparation for my post grad job. So far, I have been learning more about the process around writing code like using git and github, documentation, and testing. </p>
-        <h2>Skills and Interests</h2>
+    <!-- Navigation -->
+    <!-- It didn't seem like the instructions said to add the other pages, so I didn't-->
+    <nav>
         <ul>
-            <li>Python</li>
-            <li>Rock Climbing</li>
-            <li>Playing the Drums</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies & Interests</a></li>
         </ul>
-        <img src="https://i.pinimg.com/originals/17/cf/47/17cf476cbca38f350cdd5f6fc2222494.jpg" alt="My first drumset!" width = "20%" height = "20%">
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+    </nav>
+
+    <!-- Hero/Intro Section -->
+    <section id="hero">
+        <h1>Hi, I'm Nico Gonnella</h1>
+        <p>A web developer learning full-stack development at Drake University.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This year I am a Senior. My computer science goal is to work on transitioning from writing code like a student to writing code like a software engineer in preparation for my post grad job. So far, I have been learning more about the process around writing code like using git, github, documentation, and testing. </p> 
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        
+        <div class="project">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQGpdymrg5FMAw/feedshare-shrink_2048_1536/B56Za2LcSGGgAo-/0/1746813176303?e=1761782400&v=beta&t=M3AWYIujZbafLorhF1b5N3i4hC_E1_MSCinb2--vU1M" class="card-img-top" alt="Project screenshot" height="50%" width="50%">
+            
+            <h3>Capstone Project - Drake University Betting (DUB)</h3>
+            <p>Built a full‑stack web app with Flask, Bootstrap, and AWS (DynamoDB) delivering a secure, real‑time live sports betting platform for students with AWS‑based user authentication and DynamoDB data storage.
+Automated historical data scraping and stat calculations to generate custom betting lines for Drake games; selected as Project of the Year by the Drake University Computer Science Department for innovation and technical excellence.</p>
+                   
+            <p><strong>Technologies:</strong> Python, Agile Methodologies, AWS, HTML</p>
+            <a href="https://github.com/kadenwhitlow/DUBApp" class="btn btn-primary"><i class="bi bi-github"></i> View Code</a> | <a href="https://www.linkedin.com/posts/nico-gonnella_capstoneproject-webdevelopment-python-activity-7326665502494248960-rdKV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
+        </div>
+
+        <div class="project">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQHPkgRBn3zyCw/feedshare-shrink_2048_1536/B56ZfBPGCpHQAo-/0/1751293650020?e=1761782400&v=beta&t=WHVdBb8Okc5qwjTdISQcn8-lOEAfBKPlEnKIwWL7Zb4" class="card-img-top" alt="Project screenshot" height="50%" width="50%">
+                        
+            <h3>Delivery Manager Hub</h3>
+            <p>Won the 2025 Principal Codejam Innovation Award for Delivery Management Hub, an MCP-based assistant that queries Jira/Confluence for ticket analytics, docs, and workflow improvements—saving ~500 hours per manager and ~$97k/year vs Amazon Q.</p>
+            
+            <p><strong>Technologies:</strong> MCP, Typescript, Python, NextJS</p>
+            <a href="https://www.linkedin.com/posts/nico-gonnella_principalcodejam-innovation-ai-activity-7345457977551687681-llzS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
+                    
+        </div>
+
+        <div class="project">
+            <img src="https://media.licdn.com/dms/image/v2/D562DAQHkOyDuu0k08Q/profile-treasury-image-shrink_800_800/B56ZYHfeftHoAY-/0/1743882414812?e=1759435200&v=beta&t=_8AlKVXhRPIvAEmvvF5IVRextKjEIEKF2KO4Rw-GJ0M" class="card-img-top" alt="Project screenshot" height="50%" width="50%">
+                        
+            <h3>Training Data Enhancement Research</h3>
+            <p>Conducted research using domain randomization and 3D‑modeled synthetic data for semantic segmentation of grease‑bin components to address data scarcity in computer vision, winning First Place for Research Presentation at CCSC (April 2025).</p>
+                            
+            <p><strong>Technologies:</strong> Python, Machine Learning, 3D Modeling</p>
+            <a href="https://www.linkedin.com/posts/ericmanleycomputerscience_it-has-been-a-whirlwind-weekend-for-drake-ugcPost-7314739239533834240-sLRA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
+                    
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>I'd love to connect! Reach out if you'd like to collaborate or just chat about web development.</p>
+        <p>Email: nico.gonnella@drake.edu</p>
+        <p>GitHub: github.com/gnlearn</p>
+        <p>LinkedIn: linkedin.com/in/nico-gonnella/</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nico Gonnella. Built with HTML, CSS, and Bootstrap.</p>
+    </footer>
 </body>
 </html>
