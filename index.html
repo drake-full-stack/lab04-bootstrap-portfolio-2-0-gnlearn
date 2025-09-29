@@ -6,6 +6,7 @@
     <title>Nico Gonnella - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -27,9 +28,18 @@
         </nav>
 
     <!-- Hero/Intro Section -->
-    <section id="hero">
-        <h1>Hi, I'm Nico Gonnella</h1>
-        <p>A web developer learning full-stack development at Drake University.</p>
+    <section class="py-5 bg-light rounded mt-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1>Hi, I'm Nico Gonnella</h1>
+                    <p>A web developer learning full-stack development at Drake University.</p>
+                </div>
+                <div class="col-lg-5">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHrAbxmrlKb6A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722446900425?e=1761782400&v=beta&t=9uNy69HYkgDAr4wqrPCNrbFIvgizLRykaeBfI7zWtAA" class="img-fluid rounded-circle" height="70%"" width="70%" alt="Nico Gonnella">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -40,60 +50,99 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        
-        <div class="project">
-            <img src="https://media.licdn.com/dms/image/v2/D5622AQGpdymrg5FMAw/feedshare-shrink_2048_1536/B56Za2LcSGGgAo-/0/1746813176303?e=1761782400&v=beta&t=M3AWYIujZbafLorhF1b5N3i4hC_E1_MSCinb2--vU1M" alt="Project screenshot" height="50%" width="50%" class="rounded">
-            
-            <h3>Capstone Project - Drake University Betting (DUB)</h3>
-            <p>Built a full‑stack web app with Flask, Bootstrap, and AWS (DynamoDB) delivering a secure, real‑time live sports betting platform for students with AWS‑based user authentication and DynamoDB data storage.
+        <div class="container py-4">
+            <h2 class="mb-3">Projects</h2>
+            <div class="card mb-4">
+                <h5 class="card-header">Featured</h5>
+                
+                <div class="card-body">
+                    <div class="row align-items-center">
+                    <div class="col-lg-7">
+                    <h5 class="card-title">Capstone Project - Drake University Betting (DUB)</h5>
+                    <p class="card-text">Built a full‑stack web app with Flask, Bootstrap, and AWS (DynamoDB) delivering a secure, real‑time live sports betting platform for students with AWS‑based user authentication and DynamoDB data storage.
 Automated historical data scraping and stat calculations to generate custom betting lines for Drake games; selected as Project of the Year by the Drake University Computer Science Department for innovation and technical excellence.</p>
                    
-            <div><strong>Technologies:</strong> 
-                <p class="badge bg-dark">Python</p>
-                <p class="badge bg-dark">Agile Methodologies</p>
-                <p class="badge bg-dark">AWS</p>
-                <p class="badge bg-dark">HTML/CSS</p>
-            </div>
-
-            <a href="https://github.com/kadenwhitlow/DUBApp" class="btn btn-primary"> View Code</a> | <a href="https://www.linkedin.com/posts/nico-gonnella_capstoneproject-webdevelopment-python-activity-7326665502494248960-rdKV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary" > View Post</a>
-        </div>
-
-        <div class="project">
-            <img src="https://media.licdn.com/dms/image/v2/D5622AQHPkgRBn3zyCw/feedshare-shrink_2048_1536/B56ZfBPGCpHQAo-/0/1751293650020?e=1761782400&v=beta&t=WHVdBb8Okc5qwjTdISQcn8-lOEAfBKPlEnKIwWL7Zb4" alt="Project screenshot" height="50%" width="50%" class="rounded">
-                        
-            <h3>Delivery Manager Hub</h3>
-            <p>Won the 2025 Principal Codejam Innovation Award for Delivery Management Hub, an MCP-based assistant that queries Jira/Confluence for ticket analytics, docs, and workflow improvements—saving ~500 hours per manager and ~$97k/year vs Amazon Q.</p>
-            
-            <div><strong>Technologies:</strong> 
-                <p class="badge bg-dark">MCP</p>
-                <p class="badge bg-dark">Typescript</p>
-                <p class="badge bg-dark">Python</p>
-                <p class="badge bg-dark">NextJS</p>
-            </div>
-
-            <a href="https://www.linkedin.com/posts/nico-gonnella_principalcodejam-innovation-ai-activity-7345457977551687681-llzS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"> View Post</a>
+                    <a href="https://github.com/kadenwhitlow/DUBApp" class="btn btn-primary"><i class="bi bi-github"></i> View Code</a>
+                    <a href="https://www.linkedin.com/posts/nico-gonnella_capstoneproject-webdevelopment-python-activity-7326665502494248960-rdKV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
                     
-        </div>
-
-        <div class="project">
-            <img src="https://media.licdn.com/dms/image/v2/D562DAQHkOyDuu0k08Q/profile-treasury-image-shrink_800_800/B56ZYHfeftHoAY-/0/1743882414812?e=1759435200&v=beta&t=_8AlKVXhRPIvAEmvvF5IVRextKjEIEKF2KO4Rw-GJ0M" alt="Project screenshot" height="50%" width="50%" class="rounded">
-                        
-            <h3>Training Data Enhancement Research</h3>
-            <p>Conducted research using domain randomization and 3D‑modeled synthetic data for semantic segmentation of grease‑bin components to address data scarcity in computer vision, winning First Place for Research Presentation at CCSC (April 2025).</p>
-                            
-            <div><strong>Technologies:</strong> 
-                <p class="badge bg-dark">Python</p>
-                <p class="badge bg-dark">Machine Learning</p>
-                <p class="badge bg-dark">3D Modeling</p>
+                    <div class="mt-1">
+                        <p class="badge bg-dark">Python</p>
+                        <p class="badge bg-dark">Agile Methodologies</p>
+                        <p class="badge bg-dark">AWS</p>
+                        <p class="badge bg-dark">HTML/CSS</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQGpdymrg5FMAw/feedshare-shrink_2048_1536/B56Za2LcSGGgAo-/0/1746813176303?e=1761782400&v=beta&t=M3AWYIujZbafLorhF1b5N3i4hC_E1_MSCinb2--vU1M" class="card-img-top" alt="Project screenshot">
+                </div>        
+                </div>
+                </div>
             </div>
-            <a href="https://www.linkedin.com/posts/ericmanleycomputerscience_it-has-been-a-whirlwind-weekend-for-drake-ugcPost-7314739239533834240-sLRA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"> View Post</a>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.licdn.com/dms/image/v2/D5622AQHPkgRBn3zyCw/feedshare-shrink_2048_1536/B56ZfBPGCpHQAo-/0/1751293650020?e=1761782400&v=beta&t=WHVdBb8Okc5qwjTdISQcn8-lOEAfBKPlEnKIwWL7Zb4" class="card-img-top" alt="Project screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Delivery Manager Hub</h5>
+                            <p class="card-text">Won the 2025 Principal Codejam Innovation Award for Delivery Management Hub, an MCP-based assistant that queries Jira/Confluence for ticket analytics, docs, and workflow improvements—saving ~500 hours per manager and ~$97k/year vs Amazon Q.</p>
+                            <a href="https://www.linkedin.com/posts/nico-gonnella_principalcodejam-innovation-ai-activity-7345457977551687681-llzS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
                     
+                            <div class="mt-1">
+                                <p class="badge bg-dark">MCP</p>
+                                <p class="badge bg-dark">Typescript</p>
+                                <p class="badge bg-dark">Python</p>
+                                <p class="badge bg-dark">NextJS</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://media.licdn.com/dms/image/v2/D562DAQHkOyDuu0k08Q/profile-treasury-image-shrink_800_800/B56ZYHfeftHoAY-/0/1743882414812?e=1759435200&v=beta&t=_8AlKVXhRPIvAEmvvF5IVRextKjEIEKF2KO4Rw-GJ0M" class="card-img-top" alt="Project screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Training Data Enhancement Research</h5>
+                            <p class="card-text">Conducted research using domain randomization and 3D‑modeled synthetic data for semantic segmentation of grease‑bin components to address data scarcity in computer vision, winning First Place for Research Presentation at CCSC (April 2025).</p>
+                            <a href="https://www.linkedin.com/posts/ericmanleycomputerscience_it-has-been-a-whirlwind-weekend-for-drake-ugcPost-7314739239533834240-sLRA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa-uxIBdjJQZ08WJFsOYvVdLFJn3pW6820" class="btn btn-primary"><i class="bi bi-linkedin"></i> View Post</a>
+                    
+                            <div class="mt-1">
+                                <p class="badge bg-dark">Python</p>
+                                <p class="badge bg-dark">Machine Learning</p>
+                                <p class="badge bg-dark">3D Modeling</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="Picture1.jpg" class="card-img-top" alt="Project screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Vacation Planner</h5>
+                            <p class="card-text">Led a software engineering team to build and deploy a Flask/Python vacation-planning website on Microsoft Azure, strengthening backend, database, and collaborative delivery skills.</p>
+                            <a href="https://github.com/gnlearn/VacationPlanningWebsite" class="btn btn-primary"><i class="bi bi-github"></i> View Code</a>
+                                                
+                            <div class="mt-1">
+                                <p class="badge bg-dark">Python</p>
+                                <p class="badge bg-dark">Flask/Jinja</p>
+                                <p class="badge bg-dark">Azure</p>
+                                <p class="badge bg-dark">Azure SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="rounded">
         <h2>Get In Touch</h2>
         <p>I'd love to connect! Reach out if you'd like to collaborate or just chat about web development.</p>
         <p>Email: nico.gonnella@drake.edu</p>
@@ -104,6 +153,7 @@ Automated historical data scraping and stat calculations to generate custom bett
     <footer>
         <p>&copy; 2024 Nico Gonnella. Built with HTML, CSS, and Bootstrap.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
