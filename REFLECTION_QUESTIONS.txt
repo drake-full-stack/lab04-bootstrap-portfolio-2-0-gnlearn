@@ -1,0 +1,21 @@
+Framework Balance: What percentage of your final design uses Bootstrap components vs. custom styling? What guided this balance?
+I would say 70% bootstrap and 30% custom styling. The most important components were the card design, nav bar, and icons. Using classes for a row layout were also important 
+bootstrap components. The custom parts I did were the color scheme and then modifying the components. For example, I added badges and images to the cards as well as a profile
+picture next to the header. The balance was guided by just how powerful and versatile bootstrap is. I was surprised that every layout option, photo cropping, and icons were
+accounted for in the bootstrap documentation. 
+
+Navigation Choice: Describe your navigation solution. Why did you choose Bootstrap's navbar vs. a custom approach?
+I used the full bootstrap nav bar because it was clean and minimalist, which were the original intentions of my website design. I mainly chose this because I thought the 
+condensed nav bar on mobile was a very cool feature and it came with hover effects.
+
+Project Presentation: How did you decide to showcase your projects? What makes your approach different from the default Bootstrap cards? How did icons (if used) enhance the presentation?
+I used two different bootstrap cards. One of them had a featured, important project, and the others for a change of layout and less important projects. I personalized the 
+default cards by adding badges for skills and images to each card as well as buttons to either view a linkedin post for the project or the GitHub repository. Icons enhanced the
+visuals and made the cards more digestible rather than just text. Also, I think they draw attention to the button they are associated with. 
+
+Personal Style: How did you ensure your portfolio reflects your personality while using a framework used by millions of websites? Compare your experience using Bootstrap vs. writing custom CSS from previous labs.
+I believe a good way of personalizing these stock components is to mix and match them. I used the default cards with the badge option and a cover picture, varied the layout both 
+vertical and horizontal, added icons, then custom coloring and transitions. Now they don't resemble one feature, but the culmination of a couple features. In that way, there can 
+be infinite possiblities. The main change from using bootstrap vs custom css is that the efficiency allowed me to focus on the usability and aesthetic of the design rather than
+getting lost in small details of creating a component from the bottom up. I can try many different card designs at once rather than spending an hour on one then not liking it, 
+and having to spend an hour figuring out another. 
